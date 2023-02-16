@@ -3,7 +3,7 @@ node {
     git credentialsId: '7cc4b1b9-234e-479a-9325-3fb18394931b', url: 'https://github.com/rohini1211/R1.git'
   }
   stage ('install node js') {
-   
+     sh "sudo apt-get update"
     sh "apt install nodejs -y"
     sh "apt install npm -y"
     sh "npm init -y"
